@@ -1,0 +1,13 @@
+SELECT * FROM gs_an_table WHERE id= 1 OR id= 3 OR id= 5
+
+SELECT * FROM gs_an_table WHERE id>= 4 AND id<= 8 
+
+SELECT * FROM gs_an_table WHERE email LIKE 'test1%'
+
+SELECT * FROM gs_an_table ORDER BY indate DESC;
+
+SELECT * FROM gs_an_table WHERE age= 20 AND indate  LIKE '2020-06%'
+
+SELECT * FROM gs_an_table ORDER BY indate DESC LIMIT 5;
+
+SELECT age, COUNT(age) FROM gs_an_table GROUP BY age HAVING age>=10 AND age<= 40
